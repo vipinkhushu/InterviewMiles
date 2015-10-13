@@ -20,15 +20,14 @@
   <link rel="stylesheet" href="style/css/bootstrap.min.css">
   <script src="style/js/jquery.min.js"></script>
   <script src="style/js/bootstrap.min.js"></script>
-  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" media="all">
+  <script src="https://use.fonticons.com/1ddea501.js"></script>
 </head>
 <body>
   <!-- Header | Brand Name -->
   <header>
     <div class="container-fluid text-center">
-
-      <h1 class="brush_script_std">
-        Interview Miles
+      <h1 class="bssFont">
+        <b style="font-size:42px;">I</b>nterview <b>M</b>iles
       </h1>
     </div>
   </header>
@@ -45,171 +44,219 @@
           <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
             <div class="transparent_div" class="text-center">
               <center>
-				<span class="glyphicon glyphicon-ok-sign" style="color:#FF6633;font-size:60px;"></span>
-			  </center>
-			</div>
+                <span class="glyphicon glyphicon-ok-sign" style="color:#FF6633;font-size:60px;"></span>
+              </center>
+            </div>
           </div>
 
-          <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+          <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 anime" data-toggle="modal" data-target="#loginModal">
             <a href="#" id="link">
-              <div class="text-center rapl_box hvr-icon-grow-sign_in">
+              <div class="text-center rapl_box">
+                <h1>  <span class="glyphicon glyphicon-log-in" class="anime"></span></h1>
                 <h4>Sign In / Sign up</h4>
               </div>
             </a>
           </div>
 
 
-          <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
-            <a href="#" id="link">
-              <div class="text-center rapl_box hvr-icon-grow-bell">
-                <h4>Send Me Alerts</h4>
+          <!--Modal For Login/Register Form-->
+          <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header" style="background:#00CC99;color:#ffffff;border-bottom:0px solid black;font-size:17px;">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><span class="glyphicon glyphicon-remove-circle"></span></button>
+                  <h4 class="modal-title" id="myModalLabel" style="font-size:19px;"><center>Register</center></h4>
+                  <div class="form-group">
+                    <label for="username">Username</label>
+                    <div class="input-group">
+                      <div class="input-group-addon" style="border:2px solid #FF6633;border-right:0px;">@</div>
+                      <input type="text" class="form-control" style="border:2px solid #FF6633;border-left:0px;color:#FF6633;" name="username" id="user_check" autocomplete="off" placeholder="Username"  autofocus required>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="Full Name">Full Name</label>
+                    <div class="input-group">
+                      <div class="input-group-addon" style="border:2px solid #FF6633;border-right:0px;"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></div>
+                      <input type="text" class="form-control" style="border:2px solid #FF6633;border-left:0px;color:#FF6633;" name="fullname" id="fullname_check" autocomplete="off" placeholder="Full Name"  required>
+                    </div>
+                  </div>
+                  <center>
+                  <button type="button" class="btn btn-default">Register</button>
+                </center>
+                </div>
+                <!--<div class="modal-body">
+                ...
               </div>
-            </a>
+              <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>-->
           </div>
-
-
-          <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
-
-            <a href="#" id="link" >
-              <div class="text-center rapl_box hvr-icon-grow">
-
-                <h4>About Us</h4>
-              </div>
-            </a>
-          </div>
-
         </div>
+      </div>
+      <!--Modal Ends--->
+
+      <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 anime">
+        <a href="#" id="link">
+          <div class="text-center rapl_box">
+            <h1>  <span class="glyphicon glyphicon-bell"></span></h1>
+            <h4>Send Me Alerts</h4>
+          </div>
+        </a>
       </div>
 
 
-      <div class="col-md-3 col-lg-3 col-sm-12 col-xs-12">
-        <div class="row">
-          <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
-            <a href="#" id="link">
-              <div class="text-center rapl_box_new hvr-icon-grow-question">
-                <h4>Ask Us Anything</h4>
-              </div>
-            </a>
+      <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+        <a href="#"  id="link">
+          <div class="text-center rapl_box anime">
+            <h1>  <span class="glyphicon glyphicon-user"></span></h1>
+            <h4>About Us</h4>
           </div>
-
-          <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
-            <a href="#" id="link">
-              <div class="text-center rapl_box_new  hvr-icon-grow-news">
-                <h4>Resume Builder</h4>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
-            <a href="#" id="link">
-              <div class="text-center rapl_box_new   hvr-icon-grow-bulb">
-                <h4>Jobs For Me</h4>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
-            <a href="#" id="link">
-              <div class="text-center rapl_box_new hvr-icon-grow-thumb">
-                <h4>Crack The Interview</h4>
-              </div>
-            </a>
-          </div>
-
-        </div>
-
+        </a>
       </div>
-      <div class="col-md-3 col-lg-3 col-sm-12 col-xs-12">
-        <div class="row">
-          <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
-            <a href="#" id="link">
-              <div class="text-center rapl_box_new hvr-icon-grow-university">
-                <h4>Campus Connect</h4>
-              </div>
-            </a>
-          </div>
 
-          <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
-            <a href="#" id="link">
-              <div class="text-center rapl_box_new hvr-icon-grow-users">
-                <h4>Discussion Forum</h4>
-              </div>
-            </a>
-          </div>
-
-
-        </div>
-
-      </div>
-      <div class="col-md-3 col-lg-3 col-sm-12 col-xs-12">
-        <div class="row">
-          <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
-            <a href="#" id="link">
-              <div class="text-center rapl_box_new hvr-icon-grow-info">
-                <h4>Technical Prepration</h4>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
-            <a href="#" id="link">
-              <div class="text-center rapl_box_new hvr-icon-grow-infoc">
-                <h4>HR Prepration</h4>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
-            <a href="#" id="link">
-              <div class="text-center rapl_box_new hvr-icon-grow-puzzle">
-                <h4>Solve The Puzzle</h4>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
-            <a href="#" id="link">
-              <div class="text-center rapl_box_new  hvr-icon-grow-envelope">
-                <h4>Contact Us</h4>
-              </div>
-            </a>
-          </div>
-
-        </div>
-
-
-      </div>
     </div>
   </div>
 
-  <!--Body Content | Ends -->
 
-  <!--Footer Content -->
-  <footer>
-
-
-
-
-
-  </footer>
-  <!--Footer Content | Ends -->
-
-  <!-- Newsletter Subscription Zone-->
-  <nav class="navbar navbar-fixed-bottom hidden-xs hidden-sm" style="color:#ffffff;height:33px;min-height:33px;background:#00CC99;">
-    <div class="container-fluid" >
-      <div class="row">
-        <div class="col-lg-2 col-md-2"></div>
-        <div class="col-lg-3 col-md-3 text-right" style="font-size:20px;">Subscribe To Our Newsletter</div>
-        <div class="col-lg-3 col-md-3 text-left">
-          <form action="#" method="post">
-            <input type="email" id="email_subscribe" style="height:26px;margin-top:2px;" name="email_subscribe" class="form-control" placeholder="Enter Your Email" required>
-
+  <div class="col-md-3 col-lg-3 col-sm-12 col-xs-12">
+    <div class="row">
+      <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 anime">
+        <a href="#" id="link">
+          <div class="text-center rapl_box_new">
+            <h1>  <span class="glyphicon glyphicon-question-sign"></span></h1>
+            <h4>Ask Us Anything</h4>
           </div>
-          <div class="col-lg-3 col-md-3">
-            <input class="btn btn-primary" style="height:26px;width:130px;padding:2px 5px 5px 5px;margin-top:2px;" type="submit" id="" value="Subscribe">
-          </form>
+        </a>
+      </div>
+
+      <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+        <a href="#" id="link">
+          <div class="text-center rapl_box_new anime">
+            <h1>  <span class="icon icon-newspaper-o"></span></h1>
+            <h4>Resume Builder</h4>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 anime">
+        <a href="#" id="link">
+          <div class="text-center rapl_box_new">
+            <h1>  <span class="icon icon-lightbulb-o"></span></h1>
+            <h4>Jobs For Me</h4>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 anime">
+        <a href="#" id="link">
+          <div class="text-center rapl_box_new">
+            <h1>  <span class="glyphicon glyphicon-thumbs-up"></span></h1>
+            <h4>Crack The Interview</h4>
+          </div>
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+  <div class="col-md-3 col-lg-3 col-sm-12 col-xs-12">
+    <div class="row">
+      <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+        <a href="#" id="link">
+          <div class="text-center rapl_box_new anime">
+            <h1>  <span class="icon icon-university"></span></h1>
+            <h4>Campus Connect</h4>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+        <a href="#" id="link">
+          <div class="text-center rapl_box_new anime">
+            <h1>  <span class="icon icon-users"></span></h1>
+            <h4>Discussion Forum</h4>
+          </div>
+        </a>
+      </div>
+
+
+    </div>
+
+  </div>
+  <div class="col-md-3 col-lg-3 col-sm-12 col-xs-12">
+    <div class="row">
+      <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+        <a href="#" id="link">
+          <div class="text-center rapl_box_new anime">
+            <h1>  <span class="icon icon-info"></span></h1>
+            <h4>Technical Prepration</h4>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+        <a href="#" id="link">
+          <div class="text-center rapl_box_new anime">
+            <h1>  <span class="icon icon-info-circle"></span></h1>
+            <h4>HR Prepration</h4>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+        <a href="#" id="link">
+          <div class="text-center rapl_box_new anime">
+            <h1>  <span class="icon icon-puzzle-piece"></span></h1>
+            <h4>Solve The Puzzle</h4>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+        <a href="#" id="link">
+          <div class="text-center rapl_box_new anime">
+            <h1>  <span class="glyphicon glyphicon-envelope"></span></h1>
+            <h4>Contact Us</h4>
+          </div>
+        </a>
+      </div>
+
+    </div>
+
+
+  </div>
+</div>
+</div>
+
+<!--Body Content | Ends -->
+
+<!--Footer Content -->
+<footer>
+
+
+
+
+
+</footer>
+<!--Footer Content | Ends -->
+
+<!-- Newsletter Subscription Zone-->
+<nav class="navbar navbar-fixed-bottom hidden-xs hidden-sm" style="color:#ffffff;height:33px;min-height:33px;background:#00CC99;">
+  <div class="container-fluid" >
+    <div class="row">
+      <div class="col-lg-2 col-md-2"></div>
+      <div class="col-lg-3 col-md-3 text-right" style="font-size:20px;">Subscribe To Our Newsletter</div>
+      <div class="col-lg-3 col-md-3 text-left">
+        <form action="#" method="post">
+          <input type="email" id="email_subscribe" style="height:26px;margin-top:2px;" name="email_subscribe" class="form-control" placeholder="Enter Your Email" required>
+
         </div>
+        <div class="col-lg-3 col-md-3">
+          <input class="btn btn-primary" style="height:26px;width:130px;padding:2px 5px 5px 5px;margin-top:2px;" type="submit" id="" value="Subscribe">
+        </form>
       </div>
     </div>
-  </nav>
+  </div>
+</nav>
 
-  <!--Newsletter Subscription Zone|  Ends-->
+<!--Newsletter Subscription Zone|  Ends-->
 
 
 </body>
