@@ -26,7 +26,7 @@
   <!-- Header | Brand Name -->
   <header>
     <div class="container-fluid text-center">
-      <h1 class="bssFont">
+      <h1 class="bssFont" style="font-size:45px;">
         <b style="font-size:42px;">I</b>nterview <b>M</b>iles
       </h1>
     </div>
@@ -65,7 +65,8 @@
               <div class="modal-content">
                 <div class="modal-header" style="background:#00CC99;color:#ffffff;border-bottom:0px solid black;font-size:17px;">
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><span class="glyphicon glyphicon-remove-circle"></span></button>
-                  <h4 class="modal-title" id="myModalLabel" style="font-size:19px;"><center>Register</center></h4>
+                  <h4 class="modal-title" id="myModalLabel" style="font-size:19px;"><center>Login</center></h4>
+				   <form action="#" method="post">
                   <div class="form-group">
                     <label for="username">Username</label>
                     <div class="input-group">
@@ -74,15 +75,100 @@
                     </div>
                   </div>
                   <div class="form-group">
-                    <label for="Full Name">Full Name</label>
+                    <label for="password">Password</label>
+                    <div class="input-group">
+                      <div class="input-group-addon" style="border:2px solid #FF6633;border-right:0px;"><span class="glyphicon glyphicon-lock" aria-hidden="true"></span></div>
+                      <input type="password" class="form-control" style="border:2px solid #FF6633;border-left:0px;color:#FF6633;" name="password" id="password_check" autocomplete="off" placeholder="Password"  required>
+                    </div>
+                  </div>
+                  <center>
+                  <button type="button" class="btn btn-default">Login</button>
+					</form><br><br>
+					<p class="pull-right" style="font-size:15px;">New User? <a href="" id="link" style="color:#ffffff;" data-toggle="modal"  data-target="#registerModal" data-dismiss="modal" ><b>Register here</b></a></p><br/>
+				<hr>
+				<h4>Or Login Using</h4>
+			
+				<h2>
+            <a href="#" id="logicofb"><i class="icon icon-facebook-square icon-2x"></i></a>
+            <a href="#" id="logicoli"><i class="icon icon-linkedin-square icon-2x"></i></a>
+            <a href="#" id="logicogp"><i class="icon icon-google-plus-square icon-2x"></i></a>
+			</h2></center>
+          
+                </div>
+                <!--<div class="modal-body">
+                ...
+              </div>
+              <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>-->
+          </div>
+        </div>
+      </div>
+      <!--Modal Ends--->
+	   <!--Modal For Register Form-->
+          <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header" style="background:#00CC99;color:#ffffff;border-bottom:0px solid black;font-size:17px;">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><span class="glyphicon glyphicon-remove-circle"></span></button>
+                  <h4 class="modal-title" id="myModalLabel" style="font-size:19px;"><center>Register On Interview Miles</center></h4>
+				  <form action="#" method="post">
+				  <div class="form-group">
+                    <label for="fullname">Full Name</label>
                     <div class="input-group">
                       <div class="input-group-addon" style="border:2px solid #FF6633;border-right:0px;"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></div>
-                      <input type="text" class="form-control" style="border:2px solid #FF6633;border-left:0px;color:#FF6633;" name="fullname" id="fullname_check" autocomplete="off" placeholder="Full Name"  required>
+                      <input type="text" class="form-control" style="border:2px solid #FF6633;border-left:0px;color:#FF6633;" name="fullname" id="fullname_check" autocomplete="off" placeholder="Full Name"  autofocus required>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="username">Username</label>
+                    <div class="input-group">
+                      <div class="input-group-addon" style="border:2px solid #FF6633;border-right:0px;">@</div>
+                      <input type="text" class="form-control" style="border:2px solid #FF6633;border-left:0px;color:#FF6633;" name="username" id="user_check" autocomplete="off" placeholder="Username">
+                    </div>
+                  </div>
+				  <div class="form-group">
+                    <label for="email">Email</label>
+                    <div class="input-group">
+                      <div class="input-group-addon" style="border:2px solid #FF6633;border-right:0px;"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></div>
+                      <input type="email" class="form-control" style="border:2px solid #FF6633;border-left:0px;color:#FF6633;" name="email" id="email_check" autocomplete="off" placeholder="email">
+                    </div>
+                  </div>
+				  <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <div class="input-group">
+                      <div class="input-group-addon" style="border:2px solid #FF6633;border-right:0px;"><span class="icon icon-phone" aria-hidden="true"></span></div>
+                      <input type="text" class="form-control" style="border:2px solid #FF6633;border-left:0px;color:#FF6633;" name="phone" id="phone_check" autocomplete="off" placeholder="Username">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="password1">New Password</label>
+                    <div class="input-group">
+                      <div class="input-group-addon" style="border:2px solid #FF6633;border-right:0px;"><span class="glyphicon glyphicon-lock" aria-hidden="true"></span></div>
+                      <input type="password" class="form-control" style="border:2px solid #FF6633;border-left:0px;color:#FF6633;" name="passwor1" id="password_check1" autocomplete="off" placeholder="New Password"  required>
+                    </div>
+                  </div>
+				  <div class="form-group">
+                    <label for="password2">Repeat New Password</label>
+                    <div class="input-group">
+                      <div class="input-group-addon" style="border:2px solid #FF6633;border-right:0px;"><span class="glyphicon glyphicon-lock" aria-hidden="true"></span></div>
+                      <input type="password" class="form-control" style="border:2px solid #FF6633;border-left:0px;color:#FF6633;" name="password2" id="password_check2" autocomplete="off" placeholder="Reenter Password"  required>
                     </div>
                   </div>
                   <center>
                   <button type="button" class="btn btn-default">Register</button>
-                </center>
+					</form><br><br>
+					<p class="pull-right" style="font-size:15px;">Already Registered? <a href="" id="link" style="color:#ffffff;" data-toggle="modal" data-target="#loginModal" data-dismiss="modal"><b>Login here</b></a></p><br/>
+				<hr>
+				<h4>Or Register Using</h4>
+			
+				<h2>
+            <a href="#" id="logicofb"><i class="icon icon-facebook-square icon-2x"></i></a>
+            <a href="#" id="logicoli"><i class="icon icon-linkedin-square icon-2x"></i></a>
+            <a href="#" id="logicogp"><i class="icon icon-google-plus-square icon-2x"></i></a>
+			</h2></center>
+          
                 </div>
                 <!--<div class="modal-body">
                 ...
@@ -251,8 +337,16 @@
         <div class="col-lg-3 col-md-3">
           <input class="btn btn-primary" style="height:26px;width:130px;padding:2px 5px 5px 5px;margin-top:2px;" type="submit" id="" value="Subscribe">
         </form>
+		    
       </div>
+            <a href="#" id="logicogp" class="pull-right" style="margin-left:5px;margin-right:15px;"><i class="icon icon-google-plus-square icon-2x"></i></a>
+			<a href="#" id="logicoli" class="pull-right" style="margin-left:5px;margin-right:5px;"><i class="icon icon-linkedin-square icon-2x"></i></a>
+			<a href="#" id="logicofb" class="pull-right" style="margin-left:5px;margin-right:5px;"><i class="icon icon-facebook-square icon-2x"></i></a>
+
+
+
     </div>
+	
   </div>
 </nav>
 
