@@ -10,11 +10,12 @@ $(document).ready(function() {
 		$('#8').hide();
 		$('#9').hide();
 		$('#10').hide();
-		$('#0').hide();
+		
 		
 		
     $('.rapl_box_new').click(function() {
 		$('#header').delay(1000).hide(0);
+		
 		$('#okSign').animate({
         'marginTop' : "-=300px"//moves up		
         },{duration: 1000,});

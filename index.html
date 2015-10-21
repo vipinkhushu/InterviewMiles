@@ -22,6 +22,7 @@
   <script src="style/js/bootstrap.min.js"></script>
   <script src="https://use.fonticons.com/1ddea501.js"></script>
    <script src="style/anime.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 </head>
 <body>
 <!--Hidden Nav Bar-->
@@ -42,16 +43,8 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-		    <li  id="0">
-			<a id="linkHover" href="" style="color:#FFFFFF;border-left:1px solid #ffffff;border-right:1px solid #ffffff;" data-toggle="dropdown">Login<br/>Register</a>
-	        <ul class="dropdown-menu" role="menu" aria-labelledby="dlabel">
-	      	<a href="#" data-toggle="modal" data-target="#loginModal"><li >&nbsp;&nbsp;SignIn/SignUp</li></a>
-			<a href="#"><li >&nbsp;&nbsp;Send Me Alerts</li></a>
-			<a href="#"><li >&nbsp;&nbsp;About Us</li></a>
-			</ul>
-			
-			</li>
-            <li id="1"><a id="linkHover" href="#" style="color:#FFFFFF;border-right:1px solid #ffffff;">Ask Us<br/> Anything</a></li>
+		    
+            <li id="1"><a id="linkHover" href="#" style="color:#FFFFFF;border-left:1px solid #ffffff;border-right:1px solid #ffffff;">Ask Us<br/> Anything</a></li>
             <li id="2"><a id="linkHover" href="#" style="color:#FFFFFF;border-right:1px solid #ffffff;">Resume<br/> Builder</a></li>
 			<li id="3"><a id="linkHover" href="#" style="color:#FFFFFF;border-right:1px solid #ffffff;">Jobs <br/>For Me</a></li>
             <li id="4"><a id="linkHover" href="#" style="color:#FFFFFF;border-right:1px solid #ffffff;">Crack The <br/>Interview</a></li>
@@ -61,6 +54,15 @@
             <li id="8"><a id="linkHover" href="#" style="color:#FFFFFF;border-right:1px solid #ffffff;">HR<br/>Prepration</a></li>
 			<li id="9"><a id="linkHover" href="#" style="color:#FFFFFF;border-right:1px solid #ffffff;">Solve The<br/>Puzzle</a></li>
             <li id="10"><a id="linkHover" href="#" style="color:#FFFFFF;border-right:1px solid #ffffff;">Contact<br/> Us</a></li>
+			<li  id="0">
+			<a id="linkHover" href="" style="color:#FFFFFF;border-right:1px solid #ffffff;" data-toggle="dropdown">Login<br/>Register</a>
+	        <ul class="dropdown-menu" role="menu" aria-labelledby="dlabel">
+	      	<a href="#" id="link" data-toggle="modal" data-target="#loginModal"><li style="padding:6px 6px 6px 6px;border-bottom:0px solid black;"><span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>&nbsp;&nbsp;SignIn / SignUp</li></a>
+			<a href="#" id="link"><li style="padding:6px 6px 6px 6px;border-bottom:0px solid black;"><span class="glyphicon glyphicon-bell" aria-hidden="true"></span>&nbsp;&nbsp;Send Me Alerts</li></a>
+			<a href="#" id="link"><li style="padding:6px 6px 6px 6px;border-bottom:0px solid black;"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>&nbsp;&nbsp;About Us</li></a>
+			</ul>
+			
+			</li>
 		  </ul>
         </div>
 	  </div>
@@ -395,7 +397,7 @@
 <!--Footer Content | Ends -->
 
 <!-- Newsletter Subscription Zone-->
-<nav class="navbar navbar-fixed-bottom hidden-xs hidden-sm" style="color:#ffffff;height:33px;min-height:33px;background:#00CC99;">
+<nav class="navbar navbar-fixed-bottom hidden-xs hidden-sm" style="color:#ffffff;height:33px;min-height:33px;background:#00CC99;" id="subscribe">
   <div class="container-fluid" >
     <div class="row">
       <div class="col-lg-2 col-md-2"></div>
