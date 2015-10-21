@@ -26,8 +26,8 @@
   <!-- Header | Brand Name -->
   <header>
     <div class="container-fluid text-center">
-      <h1 class="bssFont" style="font-size:45px;">
-        <b style="font-size:42px;">I</b>nterview <b>M</b>iles
+      <h1 class="bssFont" style="font-size:45px;color:#ffffff;">
+        <b style="font-size:45px;">I</b>nterview <b>M</b>iles
       </h1>
     </div>
   </header>
@@ -37,9 +37,9 @@
 
   <div class="container">
 
-    <div class="row">
-      <div class="col-md-3 col-lg-3 col-sm-12 col-xs-12">
-        <div class="row">
+    <div class="row"  id="parent">
+      <div class="col-md-3 col-lg-3 col-sm-12 col-xs-12" >
+        <div class="row"  id="parent">
 
           <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
             <div class="transparent_div" class="text-center">
@@ -48,16 +48,16 @@
               </center>
             </div>
           </div>
-			<!--Login Zone--->
+          <!--Login Zone--->
           <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 anime" data-toggle="modal" data-target="#loginModal">
             <a href="#" id="link">
-              <div class="text-center rapl_box">
+              <div class="text-center rapl_box" style="border-top-left-radius:25px;border-top-right-radius:25px;">
                 <h1>  <span class="glyphicon glyphicon-log-in" class="anime"></span></h1>
                 <h4>Sign In / Sign up</h4>
               </div>
             </a>
           </div>
-			<!--Login Zone | ends-->
+          <!--Login Zone | ends-->
 
           <!--Modal For Login/Register Form-->
           <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -66,55 +66,55 @@
                 <div class="modal-header" style="background:#00CC99;color:#ffffff;border-bottom:0px solid black;font-size:17px;">
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><span class="glyphicon glyphicon-remove-circle"></span></button>
                   <h4 class="modal-title" id="myModalLabel" style="font-size:19px;"><center>Login</center></h4>
-				   <form action="#" method="post">
-                  <div class="form-group">
-                    <label for="username">Username</label>
-                    <div class="input-group">
-                      <div class="input-group-addon" style="border:2px solid #FF6633;border-right:0px;">@</div>
-                      <input type="text" class="form-control" style="border:2px solid #FF6633;border-left:0px;color:#FF6633;" name="username" id="user_check" autocomplete="off" placeholder="Username"  autofocus required>
+                  <form action="#" method="post">
+                    <div class="form-group">
+                      <label for="username">Username</label>
+                      <div class="input-group">
+                        <div class="input-group-addon" style="border:2px solid #FF6633;border-right:0px;">@</div>
+                           <input type="text" class="form-control" style="border:2px solid #FF6633;border-left:0px;color:#FF6633;" name="username" id="user_check" autocomplete="off" placeholder="Username"  autofocus required>
+                      </div>
                     </div>
-                  </div>
-                  <div class="form-group">
-                    <label for="password">Password</label>
-                    <div class="input-group">
-                      <div class="input-group-addon" style="border:2px solid #FF6633;border-right:0px;"><span class="glyphicon glyphicon-lock" aria-hidden="true"></span></div>
-                      <input type="password" class="form-control" style="border:2px solid #FF6633;border-left:0px;color:#FF6633;" name="password" id="password_check" autocomplete="off" placeholder="Password"  required>
+                    <div class="form-group">
+                      <label for="password">Password</label>
+                      <div class="input-group">
+                        <div class="input-group-addon" style="border:2px solid #FF6633;border-right:0px;"><span class="glyphicon glyphicon-lock" aria-hidden="true"></span></div>
+                        <input type="password" class="form-control" style="border:2px solid #FF6633;border-left:0px;color:#FF6633;" name="password" id="password_check" autocomplete="off" placeholder="Password"  required>
+                      </div>
                     </div>
+                    <center>
+                      <button type="button" class="btn btn-default">Login</button>
+                    </form><br><br>
+                    <p class="pull-right" style="font-size:15px;">New User? <a href="" id="link" style="color:#ffffff;" data-toggle="modal"  data-target="#registerModal" data-dismiss="modal" ><b>Register here</b></a></p><br/>
+                    <hr>
+                    <h4>Or Login Using</h4>
+
+                    <h2>
+                      <a href="#" id="logicofb"><i class="icon icon-facebook-square icon-2x"></i></a>
+                      <a href="#" id="logicoli"><i class="icon icon-linkedin-square icon-2x"></i></a>
+                      <a href="#" id="logicogp"><i class="icon icon-google-plus-square icon-2x"></i></a>
+                    </h2></center>
+
                   </div>
-                  <center>
-                  <button type="button" class="btn btn-default">Login</button>
-					</form><br><br>
-					<p class="pull-right" style="font-size:15px;">New User? <a href="" id="link" style="color:#ffffff;" data-toggle="modal"  data-target="#registerModal" data-dismiss="modal" ><b>Register here</b></a></p><br/>
-				<hr>
-				<h4>Or Login Using</h4>
-			
-				<h2>
-            <a href="#" id="logicofb"><i class="icon icon-facebook-square icon-2x"></i></a>
-            <a href="#" id="logicoli"><i class="icon icon-linkedin-square icon-2x"></i></a>
-            <a href="#" id="logicogp"><i class="icon icon-google-plus-square icon-2x"></i></a>
-			</h2></center>
-          
+                  <!--<div class="modal-body">
+                  ...
                 </div>
-                <!--<div class="modal-body">
-                ...
-              </div>
-              <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
-            </div>-->
+                <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>-->
+            </div>
           </div>
         </div>
-      </div>
-      <!--Modal Ends--->
-	   <!--Modal For Register Form-->
-          <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header" style="background:#00CC99;color:#ffffff;border-bottom:0px solid black;font-size:17px;">
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><span class="glyphicon glyphicon-remove-circle"></span></button>
-                  <h4 class="modal-title" id="myModalLabel" style="font-size:19px;"><center>Register On Interview Miles</center></h4>
-				  <form action="#" method="post">
-				  <div class="form-group">
+        <!--Modal Ends--->
+        <!--Modal For Register Form-->
+        <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header" style="background:#00CC99;color:#ffffff;border-bottom:0px solid black;font-size:17px;">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><span class="glyphicon glyphicon-remove-circle"></span></button>
+                <h4 class="modal-title" id="myModalLabel" style="font-size:19px;"><center>Register On Interview Miles</center></h4>
+                <form action="#" method="post">
+                  <div class="form-group">
                     <label for="fullname">Full Name</label>
                     <div class="input-group">
                       <div class="input-group-addon" style="border:2px solid #FF6633;border-right:0px;"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></div>
@@ -128,14 +128,14 @@
                       <input type="text" class="form-control" style="border:2px solid #FF6633;border-left:0px;color:#FF6633;" name="username" id="user_check" autocomplete="off" placeholder="Username">
                     </div>
                   </div>
-				  <div class="form-group">
+                  <div class="form-group">
                     <label for="email">Email</label>
                     <div class="input-group">
                       <div class="input-group-addon" style="border:2px solid #FF6633;border-right:0px;"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></div>
                       <input type="email" class="form-control" style="border:2px solid #FF6633;border-left:0px;color:#FF6633;" name="email" id="email_check" autocomplete="off" placeholder="email">
                     </div>
                   </div>
-				  <div class="form-group">
+                  <div class="form-group">
                     <label for="phone">Phone Number</label>
                     <div class="input-group">
                       <div class="input-group-addon" style="border:2px solid #FF6633;border-right:0px;"><span class="icon icon-phone" aria-hidden="true"></span></div>
@@ -149,7 +149,7 @@
                       <input type="password" class="form-control" style="border:2px solid #FF6633;border-left:0px;color:#FF6633;" name="passwor1" id="password_check1" autocomplete="off" placeholder="New Password"  required>
                     </div>
                   </div>
-				  <div class="form-group">
+                  <div class="form-group">
                     <label for="password2">Repeat New Password</label>
                     <div class="input-group">
                       <div class="input-group-addon" style="border:2px solid #FF6633;border-right:0px;"><span class="glyphicon glyphicon-lock" aria-hidden="true"></span></div>
@@ -157,18 +157,18 @@
                     </div>
                   </div>
                   <center>
-                  <button type="button" class="btn btn-default">Register</button>
-					</form><br><br>
-					<p class="pull-right" style="font-size:15px;">Already Registered? <a href="" id="link" style="color:#ffffff;" data-toggle="modal" data-target="#loginModal" data-dismiss="modal"><b>Login here</b></a></p><br/>
-				<hr>
-				<h4>Or Register Using</h4>
-			
-				<h2>
-            <a href="#" id="logicofb"><i class="icon icon-facebook-square icon-2x"></i></a>
-            <a href="#" id="logicoli"><i class="icon icon-linkedin-square icon-2x"></i></a>
-            <a href="#" id="logicogp"><i class="icon icon-google-plus-square icon-2x"></i></a>
-			</h2></center>
-          
+                    <button type="button" class="btn btn-default">Register</button>
+                  </form><br><br>
+                  <p class="pull-right" style="font-size:15px;">Already Registered? <a href="" id="link" style="color:#ffffff;" data-toggle="modal" data-target="#loginModal" data-dismiss="modal"><b>Login here</b></a></p><br/>
+                  <hr>
+                  <h4>Or Register Using</h4>
+
+                  <h2>
+                    <a href="#" id="logicofb"><i class="icon icon-facebook-square icon-2x"></i></a>
+                    <a href="#" id="logicoli"><i class="icon icon-linkedin-square icon-2x"></i></a>
+                    <a href="#" id="logicogp"><i class="icon icon-google-plus-square icon-2x"></i></a>
+                  </h2></center>
+
                 </div>
                 <!--<div class="modal-body">
                 ...
@@ -184,9 +184,10 @@
 
       <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 anime">
         <a href="#" id="link">
-          <div class="text-center rapl_box">
+          <div class="text-center rapl_box dataHolder">
             <h1>  <span class="glyphicon glyphicon-bell"></span></h1>
             <h4>Send Me Alerts</h4>
+
           </div>
         </a>
       </div>
@@ -194,9 +195,10 @@
 
       <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
         <a href="#"  id="link">
-          <div class="text-center rapl_box anime">
+          <div class="text-center rapl_box anime dataHolder">
             <h1>  <span class="glyphicon glyphicon-user"></span></h1>
             <h4>About Us</h4>
+
           </div>
         </a>
       </div>
@@ -206,37 +208,45 @@
 
 
   <div class="col-md-3 col-lg-3 col-sm-12 col-xs-12">
-    <div class="row">
-      <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 anime">
+    <div class="row"  id="parent">
+    
+	 <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 anime">
         <a href="#" id="link">
-          <div class="text-center rapl_box_new">
+          <div class="text-center rapl_box_new dataHolder"  style="border-top-left-radius:25px;">
             <h1>  <span class="glyphicon glyphicon-question-sign"></span></h1>
             <h4>Ask Us Anything</h4>
+            <div class="show">Stuck with a question? Send it in and we will help you out!</div>
           </div>
         </a>
       </div>
 
       <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
         <a href="#" id="link">
-          <div class="text-center rapl_box_new anime">
+          <div class="text-center rapl_box_new anime dataHolder">
             <h1>  <span class="icon icon-newspaper-o"></span></h1>
             <h4>Resume Builder</h4>
+            <div class="show">Build you resume on our site choosing form a range of templates and share it with a permanent link</div>
+
           </div>
         </a>
       </div>
       <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 anime">
         <a href="#" id="link">
-          <div class="text-center rapl_box_new">
+          <div class="text-center rapl_box_new dataHolder">
             <h1>  <span class="icon icon-lightbulb-o"></span></h1>
             <h4>Jobs For Me</h4>
+            <div class="show">Looking to change jobs? Get information on openings and walk in interviews</div>
+
           </div>
         </a>
       </div>
       <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 anime">
         <a href="#" id="link">
-          <div class="text-center rapl_box_new">
+          <div class="text-center rapl_box_new dataHolder">
             <h1>  <span class="glyphicon glyphicon-thumbs-up"></span></h1>
             <h4>Crack The Interview</h4>
+            <div class="show">Solve questions from our huge database. Filter them out from topics, difficulty and more. Know your strong and weak areas using the stats!</div>
+
           </div>
         </a>
       </div>
@@ -245,21 +255,25 @@
 
   </div>
   <div class="col-md-3 col-lg-3 col-sm-12 col-xs-12">
-    <div class="row">
+    <div class="row"  id="parent">
       <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
         <a href="#" id="link">
-          <div class="text-center rapl_box_new anime">
+          <div class="text-center rapl_box_new anime dataHolder">
             <h1>  <span class="icon icon-university"></span></h1>
             <h4>Campus Connect</h4>
+            <div class="show">Want to know about what questions a company coming to your campus asked in campuses they visited before yours? Use this platform to get all that, and more!</div>
+
           </div>
         </a>
       </div>
 
       <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
         <a href="#" id="link">
-          <div class="text-center rapl_box_new anime">
+          <div class="text-center rapl_box_new anime dataHolder">
             <h1>  <span class="icon icon-users"></span></h1>
             <h4>Discussion Forum</h4>
+            <div class="show">An online community with which you can discuss you questions and doubts.</div>
+
           </div>
         </a>
       </div>
@@ -269,37 +283,45 @@
 
   </div>
   <div class="col-md-3 col-lg-3 col-sm-12 col-xs-12">
-    <div class="row">
+    <div class="row"  id="parent">
       <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
         <a href="#" id="link">
-          <div class="text-center rapl_box_new anime">
+          <div class="text-center rapl_box_new anime dataHolder" style="border-top-right-radius:25px;">
             <h1>  <span class="icon icon-info"></span></h1>
             <h4>Technical Prepration</h4>
+            <div class="show">Solve Various Technical Questions Here.</div>
+
           </div>
         </a>
       </div>
 
       <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
         <a href="#" id="link">
-          <div class="text-center rapl_box_new anime">
+          <div class="text-center rapl_box_new anime dataHolder">
             <h1>  <span class="icon icon-info-circle"></span></h1>
             <h4>HR Prepration</h4>
+            <div class="show">Puzzled by HR questions? Let is show you the best approach to answer them.</div>
+
           </div>
         </a>
       </div>
       <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
         <a href="#" id="link">
-          <div class="text-center rapl_box_new anime">
+          <div class="text-center rapl_box_new anime dataHolder">
             <h1>  <span class="icon icon-puzzle-piece"></span></h1>
             <h4>Solve The Puzzle</h4>
+            <div class="show">Everybody likes a good puzzle. We have chosen the best ones for you to solve. Get them all here!</div>
+
           </div>
         </a>
       </div>
       <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
         <a href="#" id="link">
-          <div class="text-center rapl_box_new anime">
+          <div class="text-center rapl_box_new anime dataHolder">
             <h1>  <span class="glyphicon glyphicon-envelope"></span></h1>
             <h4>Contact Us</h4>
+            <!--<div class="show">Details here</div>-->
+
           </div>
         </a>
       </div>
@@ -337,16 +359,16 @@
         <div class="col-lg-3 col-md-3">
           <input class="btn btn-primary" style="height:26px;width:130px;padding:2px 5px 5px 5px;margin-top:2px;" type="submit" id="" value="Subscribe">
         </form>
-		    
+
       </div>
-            <a href="#" id="logicogp" class="pull-right" style="margin-left:5px;margin-right:15px;"><i class="icon icon-google-plus-square icon-2x"></i></a>
-			<a href="#" id="logicoli" class="pull-right" style="margin-left:5px;margin-right:5px;"><i class="icon icon-linkedin-square icon-2x"></i></a>
-			<a href="#" id="logicofb" class="pull-right" style="margin-left:5px;margin-right:5px;"><i class="icon icon-facebook-square icon-2x"></i></a>
+      <a href="#" id="logicogp" class="pull-right" style="margin-left:5px;margin-right:15px;"><i class="icon icon-google-plus-square icon-2x"></i></a>
+      <a href="#" id="logicoli" class="pull-right" style="margin-left:5px;margin-right:5px;"><i class="icon icon-linkedin-square icon-2x"></i></a>
+      <a href="#" id="logicofb" class="pull-right" style="margin-left:5px;margin-right:5px;"><i class="icon icon-facebook-square icon-2x"></i></a>
 
 
 
     </div>
-	
+
   </div>
 </nav>
 
