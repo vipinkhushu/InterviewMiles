@@ -21,10 +21,56 @@
   <script src="style/js/jquery.min.js"></script>
   <script src="style/js/bootstrap.min.js"></script>
   <script src="https://use.fonticons.com/1ddea501.js"></script>
+   <script src="style/anime.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 </head>
 <body>
+<!--Hidden Nav Bar-->
+
+  <nav class="navbar navbar-default navbar-fixed-top" style="background:#00CC99;" id="navBarTop">
+      <div class="container-fluid">
+        <div class="navbar-header">
+		<a class="navbar-brand " href="">&nbsp;<span class="bssFont" style="font-size:35px;color:#ffffff;">
+        <b style="font-size:50px;">I</b>nterview <b>M</b>iles
+      </span>
+	  </a>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+		    
+            <li id="1"><a id="linkHover" href="#" style="color:#FFFFFF;border-left:1px solid #ffffff;border-right:1px solid #ffffff;">Ask Us<br/> Anything</a></li>
+            <li id="2"><a id="linkHover" href="#" style="color:#FFFFFF;border-right:1px solid #ffffff;">Resume<br/> Builder</a></li>
+			<li id="3"><a id="linkHover" href="#" style="color:#FFFFFF;border-right:1px solid #ffffff;">Jobs <br/>For Me</a></li>
+            <li id="4"><a id="linkHover" href="#" style="color:#FFFFFF;border-right:1px solid #ffffff;">Crack The <br/>Interview</a></li>
+			<li id="5"><a id="linkHover" href="#" style="color:#FFFFFF;border-right:1px solid #ffffff;">Campus <br/>Connect</a></li>
+            <li id="6"><a id="linkHover" href="#" style="color:#FFFFFF;border-right:1px solid #ffffff;">Discussion<br/> Forum</a></li>
+			<li id="7"><a id="linkHover" href="#" style="color:#FFFFFF;border-right:1px solid #ffffff;">Technical <br/>Prepration</a></li>
+            <li id="8"><a id="linkHover" href="#" style="color:#FFFFFF;border-right:1px solid #ffffff;">HR<br/>Prepration</a></li>
+			<li id="9"><a id="linkHover" href="#" style="color:#FFFFFF;border-right:1px solid #ffffff;">Solve The<br/>Puzzle</a></li>
+            <li id="10"><a id="linkHover" href="#" style="color:#FFFFFF;border-right:1px solid #ffffff;">Contact<br/> Us</a></li>
+			<li  id="0">
+			<a id="linkHover" href="" style="color:#FFFFFF;border-right:1px solid #ffffff;" data-toggle="dropdown">Login<br/>Register</a>
+	        <ul class="dropdown-menu" role="menu" aria-labelledby="dlabel">
+	      	<a href="#" id="link" data-toggle="modal" data-target="#loginModal"><li style="padding:6px 6px 6px 6px;border-bottom:0px solid black;"><span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>&nbsp;&nbsp;SignIn / SignUp</li></a>
+			<a href="#" id="link"><li style="padding:6px 6px 6px 6px;border-bottom:0px solid black;"><span class="glyphicon glyphicon-bell" aria-hidden="true"></span>&nbsp;&nbsp;Send Me Alerts</li></a>
+			<a href="#" id="link"><li style="padding:6px 6px 6px 6px;border-bottom:0px solid black;"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>&nbsp;&nbsp;About Us</li></a>
+			</ul>
+			
+			</li>
+		  </ul>
+        </div>
+	  </div>
+    </nav>
+
+<!--Hidden-->
   <!-- Header | Brand Name -->
-  <header>
+  <header id="header">
     <div class="container-fluid text-center">
       <h1 class="bssFont" style="font-size:45px;color:#ffffff;">
         <b style="font-size:45px;">I</b>nterview <b>M</b>iles
@@ -42,7 +88,7 @@
         <div class="row"  id="parent">
 
           <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
-            <div class="transparent_div" class="text-center">
+            <div class="transparent_div" id="okSign" class="text-center">
               <center>
                 <span class="glyphicon glyphicon-ok-sign" style="color:#FF6633;font-size:60px;"></span>
               </center>
@@ -51,7 +97,7 @@
           <!--Login Zone--->
           <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 anime" data-toggle="modal" data-target="#loginModal">
             <a href="#" id="link">
-              <div class="text-center rapl_box" style="border-top-left-radius:25px;border-top-right-radius:25px;">
+              <div class="text-center rapl_box" id="signinSignup" style="border-top-left-radius:25px;border-top-right-radius:25px;">
                 <h1>  <span class="glyphicon glyphicon-log-in" class="anime"></span></h1>
                 <h4>Sign In / Sign up</h4>
               </div>
@@ -184,7 +230,7 @@
 
       <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 anime">
         <a href="#" id="link">
-          <div class="text-center rapl_box dataHolder">
+          <div class="text-center rapl_box dataHolder" id="sendMeAlerts">
             <h1>  <span class="glyphicon glyphicon-bell"></span></h1>
             <h4>Send Me Alerts</h4>
 
@@ -195,7 +241,7 @@
 
       <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
         <a href="#"  id="link">
-          <div class="text-center rapl_box anime dataHolder">
+          <div class="text-center rapl_box anime dataHolder" id="aboutUs">
             <h1>  <span class="glyphicon glyphicon-user"></span></h1>
             <h4>About Us</h4>
 
@@ -207,12 +253,16 @@
   </div>
 
 
-  <div class="col-md-3 col-lg-3 col-sm-12 col-xs-12">
+  <div class="col-md-3 col-lg-3 col-sm-12 col-xs-12" id="column2">
     <div class="row"  id="parent">
-    
+   
+
+
+
+
 	 <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 anime">
         <a href="#" id="link">
-          <div class="text-center rapl_box_new dataHolder"  style="border-top-left-radius:25px;">
+          <div class="text-center rapl_box_new dataHolder"  id="askUsAnything" style="border-top-left-radius:25px;">
             <h1>  <span class="glyphicon glyphicon-question-sign"></span></h1>
             <h4>Ask Us Anything</h4>
             <div class="show">Stuck with a question? Send it in and we will help you out!</div>
@@ -222,7 +272,7 @@
 
       <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
         <a href="#" id="link">
-          <div class="text-center rapl_box_new anime dataHolder">
+          <div class="text-center rapl_box_new anime dataHolder"   id="resumeBuilder">
             <h1>  <span class="icon icon-newspaper-o"></span></h1>
             <h4>Resume Builder</h4>
             <div class="show">Build you resume on our site choosing form a range of templates and share it with a permanent link</div>
@@ -230,7 +280,7 @@
           </div>
         </a>
       </div>
-      <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 anime">
+      <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 anime" id="jobsForMe">
         <a href="#" id="link">
           <div class="text-center rapl_box_new dataHolder">
             <h1>  <span class="icon icon-lightbulb-o"></span></h1>
@@ -240,7 +290,7 @@
           </div>
         </a>
       </div>
-      <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 anime">
+      <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 anime" id="crackTheInterview">
         <a href="#" id="link">
           <div class="text-center rapl_box_new dataHolder">
             <h1>  <span class="glyphicon glyphicon-thumbs-up"></span></h1>
@@ -254,11 +304,12 @@
     </div>
 
   </div>
-  <div class="col-md-3 col-lg-3 col-sm-12 col-xs-12">
+  
+  <div class="col-md-3 col-lg-3 col-sm-12 col-xs-12" id="column3">
     <div class="row"  id="parent">
       <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
         <a href="#" id="link">
-          <div class="text-center rapl_box_new anime dataHolder">
+          <div class="text-center rapl_box_new anime dataHolder" id="campusConnect">
             <h1>  <span class="icon icon-university"></span></h1>
             <h4>Campus Connect</h4>
             <div class="show">Want to know about what questions a company coming to your campus asked in campuses they visited before yours? Use this platform to get all that, and more!</div>
@@ -269,7 +320,7 @@
 
       <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
         <a href="#" id="link">
-          <div class="text-center rapl_box_new anime dataHolder">
+          <div class="text-center rapl_box_new anime dataHolder" id="discussionForum">
             <h1>  <span class="icon icon-users"></span></h1>
             <h4>Discussion Forum</h4>
             <div class="show">An online community with which you can discuss you questions and doubts.</div>
@@ -282,11 +333,11 @@
     </div>
 
   </div>
-  <div class="col-md-3 col-lg-3 col-sm-12 col-xs-12">
+  <div class="col-md-3 col-lg-3 col-sm-12 col-xs-12" id="column4">
     <div class="row"  id="parent">
       <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
         <a href="#" id="link">
-          <div class="text-center rapl_box_new anime dataHolder" style="border-top-right-radius:25px;">
+          <div class="text-center rapl_box_new anime dataHolder" id="technicalPrepration" style="border-top-right-radius:25px;">
             <h1>  <span class="icon icon-info"></span></h1>
             <h4>Technical Prepration</h4>
             <div class="show">Solve Various Technical Questions Here.</div>
@@ -297,7 +348,7 @@
 
       <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
         <a href="#" id="link">
-          <div class="text-center rapl_box_new anime dataHolder">
+          <div class="text-center rapl_box_new anime dataHolder"id="hrPrepration">
             <h1>  <span class="icon icon-info-circle"></span></h1>
             <h4>HR Prepration</h4>
             <div class="show">Puzzled by HR questions? Let is show you the best approach to answer them.</div>
@@ -307,7 +358,7 @@
       </div>
       <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
         <a href="#" id="link">
-          <div class="text-center rapl_box_new anime dataHolder">
+          <div class="text-center rapl_box_new anime dataHolder"id="solveThePuzzle">
             <h1>  <span class="icon icon-puzzle-piece"></span></h1>
             <h4>Solve The Puzzle</h4>
             <div class="show">Everybody likes a good puzzle. We have chosen the best ones for you to solve. Get them all here!</div>
@@ -317,7 +368,7 @@
       </div>
       <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
         <a href="#" id="link">
-          <div class="text-center rapl_box_new anime dataHolder">
+          <div class="text-center rapl_box_new anime dataHolder" id="contactUs">
             <h1>  <span class="glyphicon glyphicon-envelope"></span></h1>
             <h4>Contact Us</h4>
             <!--<div class="show">Details here</div>-->
@@ -346,7 +397,7 @@
 <!--Footer Content | Ends -->
 
 <!-- Newsletter Subscription Zone-->
-<nav class="navbar navbar-fixed-bottom hidden-xs hidden-sm" style="color:#ffffff;height:33px;min-height:33px;background:#00CC99;">
+<nav class="navbar navbar-fixed-bottom hidden-xs hidden-sm" style="color:#ffffff;height:33px;min-height:33px;background:#00CC99;" id="subscribe">
   <div class="container-fluid" >
     <div class="row">
       <div class="col-lg-2 col-md-2"></div>

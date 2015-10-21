@@ -5,7 +5,7 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  font-family:calibri;
+  font-family: 'Open Sans', sans-serif;
 }
 #parent > div{
   -webkit-transition:0.5s;
@@ -53,6 +53,7 @@ body {
   -o-transition: all 1s ease;
   -ms-transition: all 1s ease;
   transition: all 1s ease;
+  font-family: 'Open Sans', sans-serif;
 
 }
 .rapl_box:hover{
@@ -75,6 +76,7 @@ body {
   -o-transition: all 1s ease;
   -ms-transition: all 1s ease;
   transition: all 1s ease;
+  font-family: 'Open Sans', sans-serif;
 }
 .rapl_box_new:hover{
 	-webkit-transform: scale(1.2);
@@ -136,7 +138,7 @@ body {
   background:rgba(255,255,255,.7);
   transition: all 1.5s ease;
   padding: 5% 5% 5% 5%;
-  font-family:calibri;
+  font-family: 'Open Sans', sans-serif;
   font-size:150%;
   text-shadow: 0px 0px 3px #00CC99;
 }
@@ -144,6 +146,43 @@ body {
 .dataHolder:hover > .show{
   top: 0%;
 }
-#abc:hover{
-  
+.flash{
+
+  -moz-animation: flash 2s ease-out;
+  -moz-animation-iteration-count: 1;
+
+  -webkit-animation: flash 2s ease-out;
+  -webkit-animation-iteration-count: 1;
+
+  -ms-animation: flash 2s ease-out;
+  -ms-animation-iteration-count: 1;
+
+}
+
+@-webkit-keyframes flash {
+    0% { background-color:none;}
+    50% { background-color:rgba(255,255,255,.7);}        
+    100% {background-color:none;}
+}
+
+@-moz-keyframes flash {
+    0% { background-color:none;}
+    50% { background-color:rgba(255,255,255,.7);}        
+    100% {background-color:none;}
+}
+
+@-ms-keyframes flash {
+    0% { background-color:none;}
+    50% { background-color:rgba(255,255,255,.7);}        
+    100% {background-color:none;}
+}
+#linkHover:hover{
+	background-color:rgba(255,255,255,.3);
+	
+}
+#navBarTop{
+	font-family: 'Open Sans', sans-serif;
+}
+#subscribe{
+	font-family: 'Open Sans', sans-serif;
 }
