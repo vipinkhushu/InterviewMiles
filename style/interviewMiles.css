@@ -144,6 +144,37 @@ body {
 .dataHolder:hover > .show{
   top: 0%;
 }
-#abc:hover{
-  
+.flash{
+
+  -moz-animation: flash 2s ease-out;
+  -moz-animation-iteration-count: 1;
+
+  -webkit-animation: flash 2s ease-out;
+  -webkit-animation-iteration-count: 1;
+
+  -ms-animation: flash 2s ease-out;
+  -ms-animation-iteration-count: 1;
+
+}
+
+@-webkit-keyframes flash {
+    0% { background-color:none;}
+    50% { background-color:rgba(255,255,255,.7);}        
+    100% {background-color:none;}
+}
+
+@-moz-keyframes flash {
+    0% { background-color:none;}
+    50% { background-color:rgba(255,255,255,.7);}        
+    100% {background-color:none;}
+}
+
+@-ms-keyframes flash {
+    0% { background-color:none;}
+    50% { background-color:rgba(255,255,255,.7);}        
+    100% {background-color:none;}
+}
+#linkHover:hover{
+	background-color:rgba(255,255,255,.7);
+	
 }
