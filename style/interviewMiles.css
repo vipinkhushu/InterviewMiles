@@ -148,13 +148,13 @@ body {
 }
 .flash{
 
-  -moz-animation: flash 2s ease-out;
+  -moz-animation: flash 1s ease-out;
   -moz-animation-iteration-count: 1;
 
-  -webkit-animation: flash 2s ease-out;
+  -webkit-animation: flash 1s ease-out;
   -webkit-animation-iteration-count: 1;
 
-  -ms-animation: flash 2s ease-out;
+  -ms-animation: flash 1s ease-out;
   -ms-animation-iteration-count: 1;
 
 }
@@ -178,6 +178,7 @@ body {
 }
 #linkHover:hover{
 	background-color:rgba(255,255,255,.3);
+	-webkit-transform: scale(1.1); 
 	
 }
 #navBarTop{
@@ -185,4 +186,10 @@ body {
 }
 #subscribe{
 	font-family: 'Open Sans', sans-serif;
+}
+#navBarTop{
+	-webkit-box-shadow: 0px 0px 5px 3px rgb(0, 204, 153);
+       -moz-box-shadow: 0px 0px 5px 3px rgb(0, 204, 153);
+            box-shadow: 0px 0px 5px 3px rgb(0, 204, 153);
+			border-bottom:0px solid #FFFFFF;
 }
