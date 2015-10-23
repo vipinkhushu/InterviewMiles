@@ -176,9 +176,15 @@ body {
     50% { background-color:rgba(255,255,255,.7);}        
     100% {background-color:none;}
 }
+#linkHover{
+	padding-top: 5px;
+	padding-bottom: 4px;
+}
 #linkHover:hover{
 	background-color:rgba(255,255,255,.3);
 	-webkit-transform: scale(1.1); 
+	
+	
 	
 }
 #navBarTop{
